@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130127160146) do
+ActiveRecord::Schema.define(:version => 20130127163658) do
 
   create_table "accounts", :force => true do |t|
     t.string   "account_number"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20130127160146) do
   create_table "matrices", :force => true do |t|
     t.date     "year"
     t.integer  "period"
-    t.string   "type"
+    t.string   "profile_type"
     t.string   "status"
     t.integer  "cost_center_id"
     t.integer  "account_id"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20130127160146) do
     t.integer  "matrix_id"
     t.date     "year"
     t.integer  "period"
-    t.string   "type"
+    t.string   "profile_type"
     t.string   "status"
     t.integer  "cost_center_id"
     t.integer  "account_id"

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Year:</b>
+  <%= @matrix.year %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%= @matrix.period %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @matrix.type %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @matrix.status %>
+</p>
+
+<p>
+  <b>Cost center:</b>
+  <%= @matrix.cost_center_id %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @matrix.account_id %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @matrix.amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_matrix_path(@matrix) %> |
+<%= link_to 'Back', matrices_path %>

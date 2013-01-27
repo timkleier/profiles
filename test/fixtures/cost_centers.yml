@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cost_center: MyString
+  description: MyString
+
+two:
+  cost_center: MyString
+  description: MyString

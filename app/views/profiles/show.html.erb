@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Matrix:</b>
+  <%= @profile.matrix_id %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @profile.year %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%= @profile.period %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @profile.type %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @profile.status %>
+</p>
+
+<p>
+  <b>Cost center:</b>
+  <%= @profile.cost_center_id %>
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= @profile.account_id %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @profile.amount %>
+</p>
+
+<p>
+  <b>Fund:</b>
+  <%= @profile.fund %>
+</p>
+
+<p>
+  <b>Linked:</b>
+  <%= @profile.linked %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

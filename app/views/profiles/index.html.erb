@@ -1,0 +1,41 @@
+<h1>Listing profiles</h1>
+
+<table>
+  <tr>
+    <th>Matrix</th>
+    <th>Year</th>
+    <th>Period</th>
+    <th>Type</th>
+    <th>Status</th>
+    <th>Cost center</th>
+    <th>Account</th>
+    <th>Amount</th>
+    <th>Fund</th>
+    <th>Linked</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @profiles.each do |profile| %>
+  <tr>
+    <td><%= profile.matrix_id %></td>
+    <td><%= profile.year %></td>
+    <td><%= profile.period %></td>
+    <td><%= profile.type %></td>
+    <td><%= profile.status %></td>
+    <td><%= profile.cost_center_id %></td>
+    <td><%= profile.account_id %></td>
+    <td><%= profile.amount %></td>
+    <td><%= profile.fund %></td>
+    <td><%= profile.linked %></td>
+    <td><%= link_to 'Show', profile %></td>
+    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+    <td><%= link_to 'Destroy', profile, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Profile', new_profile_path %>

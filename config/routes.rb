@@ -1,4 +1,12 @@
 Profiles::Application.routes.draw do
+  resources :profiles
+
+  resources :accounts
+
+  resources :cost_centers
+
+  resources :matrices
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

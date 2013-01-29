@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  matrix_id: 1
+  year: 2013-01-27
+  period: 1
+  type: 
+  status: MyString
+  cost_center_id: 1
+  account_id: 1
+  amount: 9.99
+  fund: MyString
+  linked: false
+
+two:
+  matrix_id: 1
+  year: 2013-01-27
+  period: 1
+  type: 
+  status: MyString
+  cost_center_id: 1
+  account_id: 1
+  amount: 9.99
+  fund: MyString
+  linked: false

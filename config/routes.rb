@@ -1,4 +1,5 @@
 Profiles::Application.routes.draw do
+
   resources :cost_centers
 
   resources :accounts

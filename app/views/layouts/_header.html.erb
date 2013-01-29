@@ -1,0 +1,14 @@
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 8]><%= stylesheet_link_tag 'screen/style' %><![endif]-->
+<head>
+    <title>My ELIC Services - Profiles</title>
+    <%= stylesheet_link_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/overcast/jquery-ui.css", "application", :media => "screen" %>
+    <%= stylesheet_link_tag "application-print", :media => "print" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "highcharts", "js/modules/exporting.js" %>
+    <%= javascript_include_tag :defaults, "rails.validations" %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="initial-scale=.5, maximum-scale=1" />
+</head>  

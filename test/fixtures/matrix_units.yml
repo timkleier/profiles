@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  year: 2013-01-28
+  period: 1
+  profile_type: MyString
+  status: MyString
+  cost_center_id: 1
+  account_id: 1
+  amount: 9.99
+
+two:
+  year: 2013-01-28
+  period: 1
+  profile_type: MyString
+  status: MyString
+  cost_center_id: 1
+  account_id: 1
+  amount: 9.99

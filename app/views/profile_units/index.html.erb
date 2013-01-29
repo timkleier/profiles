@@ -1,0 +1,41 @@
+<h1>Listing profile_units</h1>
+
+<table>
+  <tr>
+    <th>Matrix Unit</th>
+    <th>Year</th>
+    <th>Period</th>
+    <th>Profile type</th>
+    <th>Status</th>
+    <th>Cost center</th>
+    <th>Account</th>
+    <th>Amount</th>
+    <th>Fund</th>
+    <th>Linked</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @profile_units.each do |profile_unit| %>
+  <tr>
+    <td><%= profile_unit.matrix_unit_id %></td>
+    <td><%= profile_unit.year %></td>
+    <td><%= profile_unit.period %></td>
+    <td><%= profile_unit.profile_type %></td>
+    <td><%= profile_unit.status %></td>
+    <td><%= profile_unit.cost_center_id %></td>
+    <td><%= profile_unit.account_id %></td>
+    <td><%= profile_unit.amount %></td>
+    <td><%= profile_unit.fund %></td>
+    <td><%= profile_unit.linked %></td>
+    <td><%= link_to 'Show', profile_unit %></td>
+    <td><%= link_to 'Edit', edit_profile_unit_path(profile_unit) %></td>
+    <td><%= link_to 'Destroy', profile_unit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Profile unit', new_profile_unit_path %>

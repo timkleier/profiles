@@ -1,0 +1,35 @@
+<h1>Listing matrix_units</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Period</th>
+    <th>Profile type</th>
+    <th>Status</th>
+    <th>Cost center</th>
+    <th>Account</th>
+    <th>Amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @matrix_units.each do |matrix_unit| %>
+  <tr>
+    <td><%= matrix_unit.year %></td>
+    <td><%= matrix_unit.period %></td>
+    <td><%= matrix_unit.profile_type %></td>
+    <td><%= matrix_unit.status %></td>
+    <td><%= matrix_unit.cost_center_id %></td>
+    <td><%= matrix_unit.account_id %></td>
+    <td><%= matrix_unit.amount %></td>
+    <td><%= link_to 'Show', matrix_unit %></td>
+    <td><%= link_to 'Edit', edit_matrix_unit_path(matrix_unit) %></td>
+    <td><%= link_to 'Destroy', matrix_unit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Matrix unit', new_matrix_unit_path %>

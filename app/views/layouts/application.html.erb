@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Profiles</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+<%= render 'layouts/header' %>
+
+<body>
+<div id="bg"></div>
+<header id="pagewrap">
+  <header id="top-panel">
+    <section id="leftlogo" class="logoSupport"><br /></section>
+    <section id="mainmenu">
+    
+    </section>
+    <section id="quickmenu">
+      <ul>
+        <li><a href="https://my.elic.org/?page_id=23" alt="Home" title="Home">Home</a></li>
+        <li><a href="#">MyInfo</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </section>
+  </header>
+  <header id="bottom-panel">
+    <section id="titlebar" class="cmSupport">
+      <div class="title">
+        <%= yield :page_title %>
+      </div>
+      <div class="toolbar">
+        <%= yield :toolbar %>
+      </div>
+    </section>
+    <section id="pagecontent">
+      <article id="content">
+        <% flash.each do |key, value| %>
+            <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+        <%= yield %>
+      </article>
+      <% debug(params) if Rails.env.development? %> <!-- took out = for beta testing-->
+    </section>
+  </header>
+</header>
 
 </body>
-</html>
+</html>    

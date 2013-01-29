@@ -1,0 +1,703 @@
+@charset "UTF-8";
+/*
+Theme Name: MyELIC
+Author: Darnology
+Author URI: http://www.darnology.com/
+Modified by ELIC, http://www.elic.org/
+*/
+
+/*
+============================================================================
+GENERAL
+============================================================================
+*/
+html, body {
+    background: #BBBBBB;
+    height: 100%;
+    color: #fff;
+    font: 100%/125% Helvetica, Arial, sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+header, nav, section, article, aside, figure, footer {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    font: 100%/125% Helvetica, Arial, sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+ul	{
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+ol	{
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+li	{
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #fff;
+    background: none;
+}
+
+img {
+    border: 0px none;
+}
+
+form {
+    margin: -1px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.field {
+    font: 100% Helvetica, Arial, sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+th {
+    background: url('/assets/general/color-secondary.png') repeat 0px 0px;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+td {
+    padding: 1px 3px;
+}
+
+#inc_Total, #exp_Total, #period_balance, #overall_balance, #content th a {
+    font-weight: bold;
+}
+
+#positive {
+    color: #000;
+}
+
+#negative {
+    color: #ff0000;
+}
+
+input {
+    font: 90%/125% Helvetica, Arial, sans-serif;
+}
+
+.hide-text {
+    display: block;
+    text-indent: -90000px;
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.field_with_errors {
+    display: inline;
+    background-color: #ffff00;
+}
+
+.field_with_errors .message {
+    color: #D00;
+    padding-left: 5px;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.even {
+    background-color: #d0d0d0;
+}
+
+/*
+============================================================================
+BACKGROUND
+============================================================================
+*/
+#bg {
+    background: url('/assets/backgrounds/00.jpg') no-repeat 0px 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*
+============================================================================
+PAGES LAYOUT
+============================================================================
+*/
+
+#pagewrap {
+    padding: 0px 5px;
+    width: 925px;
+    margin: 0px auto;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+}
+
+#admin-panel {
+    background: #404040;
+    width: 130px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0px;
+    z-index: 100;
+}
+
+#admin-panel li {
+    padding: 4px 2px;
+    width: 100px;
+    color: #fff;
+}
+
+#admin-panel li {
+    padding: 5px 0px 0px 0px;
+}
+
+#admin-panel li a, #admin-panel li a:hover {
+    color: #fff;
+}
+
+#top-panel {
+    width: 925px;
+    height: 55px;
+    float: left;
+    margin: 0px;
+}
+
+#bottom-panel {
+    width: 865px;
+    float: left;
+    margin-top: 10px;
+}
+
+/*
+============================================================================
+TOP PANEL
+============================================================================
+*/
+
+#leftlogo {
+    width: 228px;
+    height: 55px;
+    float: left;
+}
+
+.logoSupport {
+    background: url('/assets/general/support-thin.png') no-repeat 0px 0px;
+}
+
+#mainmenu {
+    background: url('/assets/general/color-secondary.png') repeat 0px 0px;
+    width: 627px;
+    height: 55px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#navbar {
+    background: none;
+    width: 530px;
+    margin: 5px auto;
+    z-index: 10;
+    top: 10px;
+}
+
+#navbar .first-tier a, .first-tier-right a {
+    font: bold 110%/120% Helvetica, Arial, sans-serif;
+    color: #21c4f4;
+    float: left;
+}
+
+#navbar .first-tier-right a {
+    padding-left: 30px;
+}
+
+#navbar .second-tier a {
+    font: bold 90%/100% Helvetica, Arial, sans-serif;
+    color: #fff;
+    float: left;
+    margin: 3px 0px 0px 20px;
+}
+
+#quickmenu {
+    background: url('/assets/general/color-secondary.png') repeat 0px 0px;
+    width: 50px;
+    height: 50px;
+    padding: 5px 5px 0px 5px;
+    margin-left: 10px;
+    line-height: 70%;
+    float: left;
+}
+
+#quickmenu a {
+    font: 80%/100% Helvetica, Arial, sans-serif;
+    color: #FFF;
+}
+
+#quickmenu li {
+    line-height: 100%;
+}
+
+/*
+============================================================================
+BOTTOM PANEL
+============================================================================
+*/
+
+#titlebar {
+    width: 925px;
+    height: 40px;
+    clear: both;
+}
+
+.cmSupport {
+    background: url('/assets/general/blue.png') repeat;
+}
+
+#titlebar .title {
+    font: bold 120%/100% Helvetica, Arial, sans-serif;
+    color: #fff;
+    float: left;
+    margin: 10px 0px 0px 20px;
+}
+
+#titlebar .toolbar {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#pagecontent {
+    background: url('/assets/general/color-base.png') repeat 0px 0px;
+    width: 885px;
+    color: #393332;
+    font: 100%/150% Helvetica, Arial, sans-serif;
+    padding: 20px;
+    margin: 0px 0px 50px 0px;
+    min-height: 450px;
+}
+
+#content th .current {
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.sortable_table th .asc {
+    background-image: url('/assets/general/up.gif');
+}
+
+.sortable_table th .desc {
+    background-image: url('/assets/general/down.gif');
+}
+
+.email_field, .name_field, .address_field {
+    max-width: 200px;
+}
+
+.ui-datepicker {font-size:10px;}  /* Decrease size of datepicker for date ranges */
+
+.charts1, .charts2, .charts3, .charts4 {
+    width: 500px;
+    height: 170px;
+    margin: 10px auto;
+}
+
+#personnel_search {
+    width: 100px;
+    height: 12px;
+    margin-bottom: 5px;
+}
+
+#personnel_table {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+#personnel_list {
+    width: 40%;
+    padding-top: 10px;
+}
+
+#individual_update {
+    width: 60%;
+}
+
+#summary_individual {
+    width: 500px;
+    height: 300px;
+    border-left: 1px solid black;
+    position: fixed;
+    top: 220px;
+}
+
+#spinner {
+    width: 40px;
+    height: 40px;
+    background: url('/assets/general/ajax-loader.gif') no-repeat 0px 0px;
+    align: center;
+    display: none;
+    margin: 70px auto;
+}
+
+#profile_chart {
+    width: 400px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+/*
+============================================================================
+TYPOGRAPHY
+============================================================================
+*/
+
+#page-title, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 25px 0px;
+}
+
+#content #page-title {
+    font-size: 200%;
+}
+
+#content h1 {
+    font-size: 150%;
+}
+
+#content h2 {
+    font-size: 137.5%;
+}
+
+#content h3 {
+    font-size: 125%;
+}
+
+#content h4 {
+    font-size: 112.5%;
+}
+
+#content h5 {
+    font-size: 100%;
+}
+
+#content h6 {
+    font-size: 85%;
+}
+
+#content blockquote {
+    background: url('images/general/blockquote.png') no-repeat 0px 0px;
+    font: 100%/150% Helvetica, Arial, sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 25px;
+}
+
+#top-panel ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#content ul {
+    list-style: outside;
+    list-style-type: disc;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+}
+
+#content ol {
+    list-style: outside;
+    list-style-type: decimal;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+}
+
+#content li {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+#content .nav li {
+    padding-bottom: 0px;
+}
+
+#content a {
+    color: #393332;
+    font: 100%/125% Helvetica, Arial, sans-serif;
+}
+
+#content th a {
+    color: #fff;
+}
+
+#content .mark-up-ul {
+    list-style: none;
+    padding: 0px 0px 15px 25px;
+}
+
+#content .mark-up-ol {
+    font: bold 100% Helvetica, Arial, sans-serif;
+    padding: 0px 0px 15px 45px;
+}
+
+#content .mark-up-ul li span, #content .mark-up-ol li span {
+    display: block;
+    font: 100%/150% Helvetica, Arial, sans-serif;
+}
+
+#content .mark-up-ul li span {
+    background: url('images/general/mark-up-ul.png') no-repeat 0px 7px;
+    padding: 0px 0px 0px 20px;
+}
+
+#content .mark-up-ol li span {
+    padding: 0px 0px 0px 0px;
+}
+
+.post img, .post object {
+    clear: right;
+}
+
+.alignleft {
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+
+.alignright {
+    float: right;
+    margin: 0px 0px 10px 20px;
+}
+
+.aligncenter {
+    margin: 0px auto 10px auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*
+============================================================================
+FOOTER
+============================================================================
+*/
+
+#footer-pages  {
+    background: #625653;
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    bottom: 0px;
+    margin: 0px auto;
+    z-index: 20;
+}
+
+#footer-container {
+    margin: 0px auto;
+    width: 940px;
+    height: 25px;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+}
+
+#footer-point-pages {
+    background: url('images/general/footer-point.png') no-repeat 0px 0px;
+    width: 36px;
+    height: 36px;
+    top: -36px;
+    float: left;
+}
+
+#footer-links-pages {
+    color: #FFFFFF;
+    font: 80%/100% Helvetica, Arial, sans-serif;
+    margin: 10px auto;
+    width: 940px;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+}
+
+#footer-links-pages a {
+    color: #FFFFFF;
+}
+
+#footer-links-pages .helpdesk {
+    border-right: none;
+    float: left;
+    padding: 0px 15px 0px 15px;
+}
+
+#footer-links-pages .email {
+    border-right: 1px solid #999594;
+    float: left;
+    padding-right: 15px;
+}
+
+#footer-links-pages .donate, #footer-links-pages .home, #footer-links-pages .logout {
+    float: right;
+    padding-right: 15px;
+    border-right: 1px solid #999594;
+}
+
+#footer-links-pages .logout, #footer-links-pages .home {
+    padding-left: 15px;
+    display: none;
+}
+
+#footer-links-pages .copyright {
+    float: right;
+    padding: 0px 35px 0px 15px;
+    border-right: 0px;
+}
+
+/*
+============================================================================
+MEDIA QUERIES
+============================================================================
+*/
+
+/* for 950px or less */
+@media only screen and (max-width: 950px) {
+    #quickmenu, #elicSupport, #elicTools, #elicContact, #elicHome, #footer-point-pages, #footer-links-pages .donate, #leftlogo {
+        display: none;
+    }
+    #footer-links-pages .home, #footer-links-pages .logout {
+        display: block;
+    }
+    #footer-links-pages .email {
+        padding-left: 10px;
+    }
+    #footer-links-pages .copyright {
+        padding-right: 10px;
+    }
+    #mainmenu {
+        width: 655px;
+    }
+    #titlebar {
+        width: 655px;
+    }
+    #pagecontent {
+        width: 615px;
+    }
+    #pagewrap, #footer-links-pages, #footer-container {
+        width: 655px;
+    }
+    #top-panel {
+        margin: 45px auto 0px auto;
+        width: 655px;
+    }
+    #bottom-panel {
+        width: 655px;
+    }
+    #mainmenu .blocks {
+        width: 140px;
+    }
+    #mainmenu .right, #income_expenses_chart {
+        width: 270px;
+    }
+    #footer-pages, #footer-home {
+        bottom: auto;
+        top: 0px;
+    }
+    #home-container {
+        margin-top: 35px;
+    }
+}
+
+
+/* for 740px or less */
+@media only screen and (max-width: 740px) {
+    #top-panel {
+        display: none;
+    }
+    #pagewrap, #footer-links-pages, #footer-container, #bottom-panel, #titlebar {
+        width: 490px;
+    }
+    #bottom-panel {
+        margin: 45px 0 0 0;
+    }
+    #pagecontent {
+        width: 450px;
+    }
+}
+
+/* for 520px or less */
+@media only screen and (max-width: 520px) {
+    #pagewrap, #rightpanel, #footer-links-pages, #footer-container, #mainmenu {
+        width: 400px;
+    }
+    #mainmenu .blocks, #mainmenu .right {
+        width: 30%;
+        padding-left: 10px;
+    }
+    #mainmenu h2, #titlebar .title {
+        font-size: 100%;
+        margin: 10px 0px 0px 5px;
+    }
+    #mainmenu .sub, #pagecontent {
+        font-size: 80%;
+    }
+    #titlebar, #pagecontent {
+        padding: 5px 10px;
+        width: 380px;
+    }
+    #footer-links-pages .copyright, img {
+        display: none;
+    }
+    #footer-links-pages .logout {
+        border-right: none;
+    }
+}
+
+/* for 420px or less */
+@media only screen and (max-width: 420px) {
+    #pagewrap, #footer-links-pages, #footer-container, #rightpanel, #mainmenu {
+        width: 320px;
+    }
+    #titlebar, #pagecontent {
+        width: 300px;
+    }
+}
